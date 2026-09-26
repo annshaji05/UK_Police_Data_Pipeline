@@ -16,7 +16,7 @@ if response.status_code == 200:
     data = response.json()
     df = pd.json_normalize(data)
 
-    # Keep only the columns we care about, and rename them to be cleaner
+    # only main columns and renamed to be cleaner
     df = df[[
         "category",
         "month",
