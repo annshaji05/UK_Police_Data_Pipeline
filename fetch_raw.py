@@ -4,10 +4,10 @@ from datetime import datetime
 import os
 import time
 
-# Make sure a "raw_data" folder exists to store untouched API responses
+# "raw_data" folder exists to store untouched API responses
 os.makedirs("raw_data", exist_ok=True)
 
-# The 4 London areas we chose, each with genuinely different crime profiles
+# The 4 London areas, each with different crime profiles
 LOCATIONS = {
     "westminster": {"lat": "51.5074", "lng": "-0.1278"},
     "city_of_london": {"lat": "51.5155", "lng": "-0.0922"},
@@ -15,7 +15,7 @@ LOCATIONS = {
     "richmond": {"lat": "51.4613", "lng": "-0.3037"},
 }
 
-# The last 3 months known to have data available (checked earlier via
+# The last 3 months known to have data available (checked via
 # the crimes-street-dates endpoint)
 MONTHS = ["2026-05", "2026-06", "2026-07"]
 
