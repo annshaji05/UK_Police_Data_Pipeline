@@ -59,7 +59,7 @@ by_month_area = filtered.groupby(["month", "area"]).size().reset_index(name="cou
 fig_trend = px.line(by_month_area, x="month", y="count", color="area", markers=True)
 st.plotly_chart(fig_trend, use_container_width=True)
 
-# --- Map (real basemap, colored by area) ---
+# --- Map (basemap, colored by area) ---
 st.subheader("Crime locations")
 if len(filtered) > 0:
     area_colors = {
