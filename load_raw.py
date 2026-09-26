@@ -7,7 +7,7 @@ raw_files = glob.glob("raw_data/*.json")
 print("Found raw files:", len(raw_files))
 
 # filename=True adds a "filename" column so we know which raw file each row came from.
-# This lets us later extract the area name and month from the filename itself.
+
 con.execute(f"""
     CREATE OR REPLACE TABLE raw_crimes AS
     SELECT * FROM read_json_auto({raw_files}, filename=True)
