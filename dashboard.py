@@ -7,7 +7,7 @@ st.set_page_config(page_title="UK Police Crime Dashboard", layout="wide")
 st.title("🚓 London Crime Dashboard")
 st.caption("Street-level crime data from data.police.uk — Westminster, City of London, Hackney, and Richmond upon Thames (May–July 2026)")
 
-# Connect to our DuckDB database and load the clean table
+# Connect to DuckDB database and load the clean table
 con = duckdb.connect("police_data.duckdb", read_only=True)
 df = con.execute("SELECT * FROM crimes_clean").df()
 con.close()
