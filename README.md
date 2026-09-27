@@ -89,3 +89,6 @@ This will open automatically in your browser.
 - Schedule `fetch_raw.py` to run automatically (e.g. monthly), so the dashboard stays up to date without manual re-running
 - Add outcome-rate analysis (e.g. % of crimes resulting in a charge, by area/category)
 - Deploy the dashboard online (e.g. Streamlit Community Cloud) so it doesn't need to be run locally
+
+## How AI helped ##
+I used AI to help me choose which dataset to work with, weighing up a few free API options before settling on the UK Police API for its real-world complexity and public relevance. The rest of the project (design decisions, coding, debugging, and testing) I worked through myself, using prior knowledge and YouTube tutorials.
