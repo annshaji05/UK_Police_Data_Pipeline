@@ -10,7 +10,7 @@ This project builds on that same interest — turning raw data into something ge
 ## Purpose
 This project is a small end-to-end data pipeline that pulls real, publicly available UK crime data, stores it properly (raw and cleaned), and presents it through an interactive dashboard. It was built as part of my application to The Information Lab's Data Engineering Consultant role, to demonstrate real data engineering decisions: handling raw data responsibly, modelling it cleanly, and building something genuinely usable from it.
 
-The dashboard is aimed at an **analyst-style audience** — someone comparing crime patterns across different London areas and time periods, rather than just checking crime near a single address.
+The dashboard is aimed at an analyst-style audience — someone comparing crime patterns across different London areas and time periods, rather than just checking crime near a single address.
 
 ## Data Source
 - **API:** [UK Police Data API](https://data.police.uk/docs/method/crime-street/) — an open, official government data source (data.police.uk)
