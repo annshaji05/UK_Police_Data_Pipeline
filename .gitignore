@@ -1,5 +1,5 @@
-   .venv/
-   __pycache__/
-   *.pyc
-   .env
-   *.duckdb
+.venv/
+__pycache__/
+*.pyc
+.env
+*.duckdb
